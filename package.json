@@ -1,0 +1,19 @@
+{
+  "name": "image-gen-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that generates & edits images with OpenAI gpt-image-2 and saves them to a path you specify — for producing real project assets (banners, icons, textures), not UI mockups.",
+  "type": "module",
+  "bin": {
+    "image-gen-mcp": "src/index.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "selftest": "node scripts/selftest.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  }
+}
