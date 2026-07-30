@@ -12,8 +12,8 @@ console.log = (...args) => console.error(...args);
 import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { McpServer } from "@modelcontextprotocol/server";
+import { StdioServerTransport } from "@modelcontextprotocol/server/stdio";
 import { OpenAIImageClient } from "./openai-image-client.mjs";
 import { registerImageTools } from "./tools.mjs";
 
